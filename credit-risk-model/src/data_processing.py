@@ -6,7 +6,6 @@ from sklearn.compose import ColumnTransformer
 from sklearn.preprocessing import StandardScaler, OneHotEncoder
 from sklearn.impute import SimpleImputer
 
-
 class RFMFeatureGenerator(BaseEstimator, TransformerMixin):
     def __init__(self, snapshot_date=None):
         self.snapshot_date = snapshot_date
